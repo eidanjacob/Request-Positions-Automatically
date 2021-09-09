@@ -1,0 +1,40 @@
+Sentences,Tags
+"Dear Hiring Manager,",Opening
+Hello <org>!,Opening Organization
+"Hello <org>,",Opening Organization
+"Dear Sir/Madam,",Opening
+I have been seeking a position that would allow me to use my statistical analysis and scientific communication skills to answer pressing questions.,Interest Statistics Communication
+I am always excited to use scientific reasoning to make the world a better place.,Interest Fit
+I was excited to see that <org> was seeking a <role>.,Interest Organization Role
+I am a programmer and data scientist interested in the <role> role at <org>.,I_am_a Interest Organization Role
+"I am a programmer, statistician, and general geek interested in <cause>.",I_am_a Interest Cause
+I hope I have shown how my experiences make me a good fit for the <role> position. ,Closing Role Fit
+"My education, experience, and personal interests make me a good fit for the <role> role at <org>. ",Interest Fit Organization Role
+<Cause> and related issues have been important to me since I first encountered them as a student.,Cause University
+I was first exposed to discussions of <cause> as a university student and have since searched for ways to use my career working to improve related problems.,Cause University
+"I am currently located on Long Island, but am happy to relocate.",Location
+"I am currently located on Long Island, but am happy to relocate or work remotely.",Location
+"I am able work remotely or in-person, as conditions require.",Location
+I currently live on Long Island and most recently worked as a software engineer in the health insurance industry.,Location Software_Engineer Health Insurance 
+"As an undergraduate, I majored in Statistical Science and completed a minor in Computer Science. ",University Statistics Computer_Science
+"I fondly recall my time in a masters-level statistical consulting course, where teams of students worked independently to advise researchers on campus with experimental design and data analysis. ",Consulting Team Research Experimental_Design Data_Analysis
+"Besides learning and using new statistical techniques almost every week, each project also required quickly understanding the basics of a different field of study and understanding the major parameters or questions at play.",Consulting Fast_Learner
+We were sometimes presented with large datasets and others asked to come up with procedures to produce or collect new ones.,Consulting Data_Analysis
+The course was an excellent way to practice communicating my results back to the domain experts in need of actionable conclusions.,Consulting Domain_Experts Business_Intelligence Communication
+"I seek to continue to develop analytic skills to take on a variety of challenges across different domains, and am eager to find these at <org>.",Personal_Development Challenges Organization
+I believe that big data and AI-based tools can have as much promise for the goals of common people as they do for companies or governments.,Institutions Alignment
+I’m passionate about ensuring that the benefits of increasingly sophisticated technologies are available to individuals instead of used against them.,Alignment
+"As a student and professional I have been in many situations which required having a foot in both the technical and non-technical side of a research question or business, and have grown very comfortable working on these kinds of teams.  ",Communication Team
+<Org>'s mission aligns with my beliefs and I am excited to potentially contribute.,Organization
+I keep myself sharp and up-to-date with current events by participating in online forecasting sites like Polymarket and Metaculus.,Hobbies Forecasting I_am_a
+"While receiving my degree at Duke University, I enjoyed the opportunity to teach statistics students in a variety of settings.",University Statistics Education
+"While I found explaining and demonstrating concepts to be intrinsically enjoyable, witnessing the students achieve mastery of course material in real-time was truly rewarding.",Education Fit
+"Despite receiving little formal training in pedagogy, I quickly understood that students in the same class usually arrived with very different backgrounds and learning styles. My ability to present the same concept multiple ways for different audiences was part of the reason I was recognized with the TA of the Year award in my senior year.",Education
+"In my own life, I make sure to measure the effectiveness of my choices and the accuracy of my predictions, and it’s important to me that institutions do the same.",Forecasting Institutions
+I’m eager to contribute to good institutional decision-making for sustainable improvements to humanity’s future.,Forecasting Fit Institutions
+"I consider myself more of a statistician than a programmer, but feel comfortable doing both. ",I_am_a
+"I’ve taken a number of formal and informal courses in statistics and Bayesian reasoning/decision analysis, various machine learning techniques, and making and evaluating calibrated forecasts.",Statistics Hobbies Forecasting Machine_Learning Data_Analysis
+Thank you for taking the time to review my application. ,Closing
+I would be happy to correspond by email (eidanjacob@gmail.com) or phone (631-974-7605) to discuss my personal and professional fit with <org>.,Closing Organization
+"Cordially, Eidan Jacob",Closing
+"Sincerely, Eidan Jacob",Closing
