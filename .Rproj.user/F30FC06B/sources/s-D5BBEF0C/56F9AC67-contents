@@ -4,6 +4,9 @@ library(dplyr)
 library(stringr)
 
 sentences_df = read_csv("../sentences.csv")
+sentences_df$Id = 1:nrow(sentences_df)
+sentences_df = sentences_df %>% mutate(Id, Sentences, Tags)
+
 tags = paste(sentences_df$Tags, collapse = " ") %>%
     str_split(" ") %>%
     unlist() %>%
@@ -55,8 +58,11 @@ ui <- fluidPage(
         # Show generated text
         mainPanel(
             wellPanel(
-                
-            textOutput("cover")
+                htmlOutput("cover")
+            ),
+            wellPanel(
+                textInput("selections",
+                          "Sentence Ids")
             ),
             dataTableOutput("sentences")
         )
@@ -66,7 +72,18 @@ ui <- fluidPage(
 # Define server logic required to draw a histogram
 server <- function(input, output) {
     
-    output$cover = renderText("test")
+    output$cover = renderUI(
+        {
+            sentence_ids = str_split(input$selections, ", ") %>% unlist() %>% as.numeric()
+            selected_sentences = sentences_df$Sentences[sentence_ids]
+            
+            selected_sentences = gsub("<org>", input$org, selected_sentences)
+            selected_sentences = gsub("<role>", input$role, selected_sentences)
+            selected_sentences = gsub("<cause>", input$cause, selected_sentences)
+            HTML(paste(c(selected_sentences, "Eidan Jacob"), collapse = "<br/><br/>"))
+        }
+    )
+    
     output$sentences = renderDataTable(
         filter_tag(input$includes, input$excludes),
         options = list(
